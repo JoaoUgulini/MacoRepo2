@@ -1,0 +1,84 @@
+/* Reset básico para garantir compatibilidade entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #261F28; /* Fundo escuro principal */
+    color: #D8BCA0; /* Texto com tom suave para contraste */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #F23D3D; /* Cor de destaque */
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.profile {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #D8BCA0; /* Fundo claro para contraste com o fundo escuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile p {
+    color: #261F28; /* Texto escuro sobre fundo claro */
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    border: 5px solid #F23D3D; /* Destaque na borda da imagem */
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #F23D3D; /* Cor de destaque */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile {
+        padding: 15px;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+}

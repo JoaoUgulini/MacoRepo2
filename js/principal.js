@@ -11,8 +11,4 @@ function mudaColores() {
         }, 1000 * (index + 1));
     });
 }
-function abrePagina(pagina) {
-    window.location.href = pagina;
-}
-
 window.onload = mudaColores;
